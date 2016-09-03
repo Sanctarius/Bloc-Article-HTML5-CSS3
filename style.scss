@@ -1,0 +1,160 @@
+/* RESET CSS */
+
+body,div,fieldset,input,img,a,a:hover,select,li ,ul, p, h1, h2, h3, h4, h5, h6, iframe
+{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration:none;
+    outline:none;
+    list-style:none;
+    vertical-align:bottom;
+    white-space:normal;
+}
+
+/* CLEAR */
+
+.clear {clear: both;}
+
+/* COULEURS */
+
+$back: #eee9f4;
+$black: #000;
+$white: #ffffff; 
+$purple: #9753ea;
+
+/* BASE */
+
+body {background: $back;}
+
+p {font-family: 'Poppins'; font-size: .8em; font-weight: 300; color: #fff;}
+h3 {font-family: 'Poppins'; font-size: 1.1em; font-weight: 300; color: #fff;}
+
+
+/* POSTS */
+
+/* Normal */
+
+.allposts {
+
+  article {
+    height: 270px; 
+    transition: .3s;  
+    width: 350px; 
+    margin: 150px auto 0 auto;
+
+    a {
+      display: block; 
+      position: relative; 
+      width: 100%; 
+      height: 270px; 
+      overflow: hidden; 
+      border-radius: 6px; 
+      transition: .3s;
+
+      img {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        z-index: 990; 
+        border-radius: 6px; 
+        height: 100%; 
+        transition: .1s; 
+        width: 100%;
+      }
+
+      .degpost {
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        z-index: 991; 
+        border-radius: 6px; 
+        transition: .3s;
+        background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#000000',GradientType=0 );
+      }
+
+      .titlepost {
+        position: absolute; 
+        z-index: 995; 
+        bottom: 40px; 
+        left: 20px;
+        transition: .3s;
+      }
+
+      .infospost {
+        font-family: 'Poppins'; 
+        font-size: .7em; 
+        font-weight: 300; 
+        color: #fff; 
+        position: absolute; 
+        bottom: 20px; 
+        left: 20px; 
+        z-index: 995;
+        transition: .3s;
+
+        .datepost {
+          margin-right: 10px;
+        }
+      }
+
+      .extrait {
+        position: absolute;
+        z-index: 995;
+        left: 20px;
+        bottom: -100px;
+        width: calc( 100% - 40px );
+        transition: .3s;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+/* Hover */
+
+.allposts {
+
+  article:hover {
+
+    a {
+      box-shadow: 0px 25px 43px 0px #ba8ef1;
+      filter:progid:DXImageTransform.Microsoft.Shadow(color=#ba8ef1, Direction=180, Strength=43);
+
+      img {
+        filter: grayscale(100%);
+      }
+
+      .degpost {
+        background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(151,83,234,1) 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#9753ea',GradientType=0 );
+      }
+
+      .titlepost {
+        bottom: 120px;
+      }
+
+      .infospost {
+        bottom: 100px;
+      }
+
+      .extrait {
+        bottom: 10px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
